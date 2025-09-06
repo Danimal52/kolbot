@@ -118,12 +118,14 @@ let Config = {
     Memory: false,
     Skill: false,
     Town: false,
+    Shrines: false,
   },
 
   // Experimental
   FastParty: false,
   AutoEquip: false,
   UseExperimentalAvoid: false,
+  UseExperimentalClearLevel: false,
 
   // Time
   StartDelay: 0,
@@ -562,6 +564,7 @@ let Config = {
     StarTP: "Star TP up",
     DiabloMsg: "Diablo",
     ClearRadius: 30,
+    /** @type {import("sdk/types/Config").DiabloSeal[]} */
     SealOrder: ["vizier", "seis", "infector"]
   },
   DiabloHelper: {
@@ -572,6 +575,7 @@ let Config = {
     OpenSeals: false,
     SafePrecast: true,
     ClearRadius: 30,
+    /** @type {import("sdk/types/Config").DiabloSeal[]} */
     SealOrder: ["vizier", "seis", "infector"],
     RecheckSeals: false
   },
